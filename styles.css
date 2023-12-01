@@ -1,0 +1,21 @@
+/* CSS reset */
+a {
+    text-decoration: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .box1 .dot1  {
+    background-color: rgb(230, 23, 23);
+  }
+
+  .box2 .dot1,
+  .box2 .dot2,
+  .box2 .dot3{
+    background-color: rgb(230, 23, 23);
+
+  }
