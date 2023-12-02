@@ -1,77 +1,77 @@
 /* CSS reset */
 a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: 500;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+}
 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
 
-  .box1 .dot1  {
-    background-color: rgb(230, 23, 23);
-  }
+.box1 .dot1 {
+  background-color: rgb(230, 23, 23);
+}
 
-  body{
-    background-color: aqua;
-  }
-    /* header */
+body {
+  background-color: aqua;
+}
+/* header */
 
-    header {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #1c1c1c;      
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 0 2rem 0 2rem;
+}
 
-    .logo{
-      display: flex;
-      align-items: center;
-      color: #fdc905;       
-      font-size: 24px;
-      
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fdc905;
+  font-size: 24px;
+}
 
-    .logo > span {
-      color: whitesmoke;font-weight: 700;
-      
-      
-    }
+.logo > span {
+  color: whitesmoke;
+  font-weight: 700;
+}
 
-    .logo > .icon {
-      width: 50px;
-    }
+.logo > .icon {
+  width: 50px;
+}
 
-    .left {
-      display: flex;
-      gap: 1rem;
-    }
-    .right {
-      gap: 8px;
-    }
+.left {
+  display: flex;
+  gap: 1rem;
+}
+.right {
+  gap: 8px;
+}
 
-    .right{
-    color: whitesmoke;
-    display: flex;
-    
-  
+.right {
+  color: whitesmoke;
+  display: flex;
+}
 
-   }
+/* hero */
+.hero {
+  background-color: black;
+  display: flex;
+  height: 3rem;
+  color: whitesmoke;
+  align-items: flex-end;
+  padding: 5rem 2rem 1rem 2rem;
 
-  .box2 .dot1,
-  .box2 .dot2,
-  .box2 .dot3{
-    background-color: rgb(230, 23, 23);
+  font-size: 2rem;
+}
 
-  }
-
-
-
-
-
-  
+.box2 .dot1,
+.box2 .dot2,
+.box2 .dot3 {
+  background-color: rgb(230, 23, 23);
+}
