@@ -12,9 +12,7 @@ a {
   font-family: "Cabin", sans-serif;
 }
 
-.box1 .dot1 {
-  background-color: rgb(230, 23, 23);
-}
+
 
 body {
   background-color: aqua;
@@ -70,8 +68,108 @@ header {
   font-size: 2rem;
 }
 
+/* main */
+
+.main {
+  background-color:black;
+  display: flex;
+  justify-content: space-between;  
+  padding: 2rem;
+}
+.line {
+  background-color: whitesmoke;
+  height: 0.25rem;
+  margin: 0 2rem;
+}
+
+.main-left{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  gap: 2rem;
+}
+
+.bin {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  border: #fdc905 solid 2px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  
+
+}
+
+.product {
+  height: 150px;
+}
+
+.box1,
+.box2 {
+  display: flex;
+  align-items: center;
+  width: 100%;   
+  background-color:#1c1c1c;
+  padding: 1rem;
+  padding-right: 4rem;
+  gap: 10px;
+  border-radius: 1rem;
+  
+  
+  
+}
+.box1 p,
+.box2 p{
+  padding-top: 1rem;  
+}
+
+.description{
+  gap: 1rem;
+  width: 135px;
+}
+
+.description h3 {
+  padding-bottom: 1rem;
+}
+
+.lv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dotbox{
+  display: flex;
+  gap: 0.3rem;
+}
+
+.dot1,
+.dot2,
+.dot3,
+.dot4{
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+
+.box1 .dot1 {
+  background-color:#fdc905 ;
+  border-radius: 50%;
+  
+}
+
 .box2 .dot1,
 .box2 .dot2,
 .box2 .dot3 {
-  background-color: rgb(230, 23, 23);
+  
+  background-color:#fdc905 ;
+  
+}
+
+.main-right{
+  color: whitesmoke;
 }
