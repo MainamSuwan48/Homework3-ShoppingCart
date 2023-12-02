@@ -3,6 +3,7 @@ a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 500;
+  padding: 4px;
 }
 
 * {
@@ -48,9 +49,11 @@ header {
 .left {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 .right {
   gap: 8px;
+  align-items: center;
 }
 
 .right {
@@ -279,4 +282,9 @@ header {
   .coupon{
     overflow: hidden;
   }
+}
+
+a:hover{
+  background-color: #fdc905;
+  border-radius: 4px;
 }
