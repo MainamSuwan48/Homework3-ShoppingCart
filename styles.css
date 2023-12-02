@@ -14,8 +14,10 @@ a {
 
 
 
+
+
 body {
-  background-color: aqua;
+  background-color: black;
 }
 /* header */
 
@@ -73,8 +75,9 @@ header {
 .main {
   background-color:black;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-around;  
   padding: 2rem;
+  gap: 2rem;
 }
 .line {
   background-color: whitesmoke;
@@ -84,9 +87,12 @@ header {
 
 .main-left{
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   color: whitesmoke;
   gap: 2rem;
+  min-width: 420px; 
+  min-height: 400px; 
 }
 
 .bin {
@@ -107,6 +113,7 @@ header {
 
 .box1,
 .box2 {
+  min-height: 180px;
   display: flex;
   align-items: center;
   width: 100%;   
@@ -171,5 +178,105 @@ header {
 }
 
 .main-right{
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: whitesmoke;
+  min-height: 400px;
+  background-color: #1c1c1c;
+  flex-grow: 2;
+  gap: 1.25rem;
+  
+}
+
+.info{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+
+.coupon {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;  
+  gap: 1rem;
+}
+
+.coupon i{
+  font-size: 1.5rem;
+}
+
+.coupon input{
+  padding: 0.5rem;
+  flex: 1;
+  border-radius: 8px;
+}
+
+.coupon button {
+  color: #fdc905;
+  font-weight: 700;
+  background-color: #1c1c1c;
+  border-color: #fdc905;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout{
+  padding: 1rem 1.5rem;
+  background-color: #fdc905;
+  border-color: #fdc905;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media(max-width :850px) {
+  .right{
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .right p{
+    display: none;
+  }
+ .main{
+  flex-direction: column;
+ }
+}
+
+@media(max-width :570px) {
+  .left{
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .main-left{
+    min-width: 300px;
+  }
+}
+
+@media(max-width :450px) {
+  .bin{
+    border: none;
+  }
+  .cp-icon{
+    display: none;
+  }
+
+  .coupon{
+    overflow: hidden;
+  }
 }
