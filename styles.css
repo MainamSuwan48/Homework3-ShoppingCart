@@ -1,6 +1,8 @@
 /* CSS reset */
 a {
     text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
   }
   
   * {
@@ -15,19 +17,22 @@ a {
     background-color: rgb(230, 23, 23);
   }
 
+  body{
+    background-color: aqua;
+  }
     /* header */
 
     header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background-color: #1c1c1c;
+      background-color: #1c1c1c;      
     }
 
     .logo{
       display: flex;
       align-items: center;
-      color: #fdc905;      
+      color: #fdc905;       
       font-size: 24px;
       
     }
@@ -42,12 +47,30 @@ a {
       width: 50px;
     }
 
+    .left {
+      display: flex;
+      gap: 1rem;
+    }
+    .right {
+      gap: 8px;
+    }
+
+    .right{
+    color: whitesmoke;
+    display: flex;
+    
+  
+
+   }
+
   .box2 .dot1,
   .box2 .dot2,
   .box2 .dot3{
     background-color: rgb(230, 23, 23);
 
   }
+
+
 
 
 
