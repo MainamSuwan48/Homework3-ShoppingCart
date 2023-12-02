@@ -12,7 +12,10 @@ a {
 
 body {
   background-color: black;
+  max-width: 1200px;
+  margin: auto;
 }
+
 /* header */
 
 a {
@@ -242,9 +245,9 @@ header {
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   flex-direction: column;
-  color: whitesmoke;
+  color: whitesmoke;  
   min-height: 400px;
   background-color: #1c1c1c;
   flex-grow: 2;
@@ -267,6 +270,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .coupon i {
@@ -299,6 +303,8 @@ header {
   background-color: #fdc905;
   border-color: #fdc905;
   border-radius: 8px;
+  
+  
 }
 
 /* Responsive */
