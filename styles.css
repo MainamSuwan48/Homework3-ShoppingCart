@@ -1,9 +1,6 @@
 /* CSS reset */
 a {
   text-decoration: none;
-  color: whitesmoke;
-  font-weight: 500;
-  padding: 4px;
 }
 
 * {
@@ -13,14 +10,21 @@ a {
   font-family: "Cabin", sans-serif;
 }
 
-
-
-
-
 body {
   background-color: black;
 }
 /* header */
+
+a {
+  color: whitesmoke;
+  font-weight: 500;
+  padding: 4px;
+}
+
+a:hover {
+  background-color: #fdc905;
+  border-radius: 4px;
+}
 
 header {
   display: flex;
@@ -76,9 +80,9 @@ header {
 /* main */
 
 .main {
-  background-color:black;
+  background-color: black;
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   padding: 2rem;
   gap: 2rem;
 }
@@ -88,26 +92,24 @@ header {
   margin: 0 2rem;
 }
 
-.main-left{
+.main-left {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   color: whitesmoke;
   gap: 2rem;
-  min-width: 420px; 
-  min-height: 400px; 
+  min-width: 420px;
+  min-height: 400px;
 }
 
 .bin {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   border: #fdc905 solid 2px;
   border-radius: 50%;
   height: 35px;
   width: 35px;
-  
-
 }
 
 .product {
@@ -119,22 +121,19 @@ header {
   min-height: 180px;
   display: flex;
   align-items: center;
-  width: 100%;   
-  background-color:#1c1c1c;
+  width: 100%;
+  background-color: #1c1c1c;
   padding: 1rem;
   padding-right: 4rem;
   gap: 10px;
   border-radius: 1rem;
-  
-  
-  
 }
 .box1 p,
-.box2 p{
-  padding-top: 1rem;  
+.box2 p {
+  padding-top: 1rem;
 }
 
-.description{
+.description {
   gap: 1rem;
   width: 135px;
 }
@@ -143,14 +142,14 @@ header {
   padding-bottom: 1rem;
 }
 
-.lv{
+.lv {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
 
-.dotbox{
+.dotbox {
   display: flex;
   gap: 0.3rem;
 }
@@ -158,29 +157,25 @@ header {
 .dot1,
 .dot2,
 .dot3,
-.dot4{
+.dot4 {
   background-color: white;
   height: 12px;
   width: 12px;
   border-radius: 50%;
 }
 
-
 .box1 .dot1 {
-  background-color:#fdc905 ;
+  background-color: #fdc905;
   border-radius: 50%;
-  
 }
 
 .box2 .dot1,
 .box2 .dot2,
 .box2 .dot3 {
-  
-  background-color:#fdc905 ;
-  
+  background-color: #fdc905;
 }
 
-.main-right{
+.main-right {
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -191,15 +186,14 @@ header {
   background-color: #1c1c1c;
   flex-grow: 2;
   gap: 1.25rem;
-  
 }
 
-.info{
+.info {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.price{
+.price {
   display: flex;
   justify-content: space-between;
 }
@@ -208,15 +202,15 @@ header {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   gap: 1rem;
 }
 
-.coupon i{
+.coupon i {
   font-size: 1.5rem;
 }
 
-.coupon input{
+.coupon input {
   padding: 0.5rem;
   flex: 1;
   border-radius: 8px;
@@ -231,13 +225,13 @@ header {
   border-radius: 8px;
 }
 
-.total{
+.total {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.checkout{
+.checkout {
   padding: 1rem 1.5rem;
   background-color: #fdc905;
   border-color: #fdc905;
@@ -245,46 +239,41 @@ header {
 }
 
 /* Responsive */
-@media(max-width :850px) {
-  .right{
+@media (max-width: 850px) {
+  .right {
     flex-direction: column;
     justify-content: center;
     padding: 10px 0;
   }
-  .right p{
+  .right p {
     display: none;
   }
- .main{
-  flex-direction: column;
- }
+  .main {
+    flex-direction: column;
+  }
 }
 
-@media(max-width :570px) {
-  .left{
+@media (max-width: 570px) {
+  .left {
     flex-direction: column;
     justify-content: center;
     padding: 10px 0;
   }
 
-  .main-left{
+  .main-left {
     min-width: 300px;
   }
 }
 
-@media(max-width :450px) {
-  .bin{
+@media (max-width: 450px) {
+  .bin {
     border: none;
   }
-  .cp-icon{
+  .cp-icon {
     display: none;
   }
 
-  .coupon{
+  .coupon {
     overflow: hidden;
   }
-}
-
-a:hover{
-  background-color: #fdc905;
-  border-radius: 4px;
 }
