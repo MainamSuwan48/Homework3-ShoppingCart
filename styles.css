@@ -7,11 +7,40 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+
   }
 
   .box1 .dot1  {
     background-color: rgb(230, 23, 23);
   }
+
+    /* header */
+
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #1c1c1c;
+    }
+
+    .logo{
+      display: flex;
+      align-items: center;
+      color: #fdc905;      
+      font-size: 24px;
+      
+    }
+
+    .logo > span {
+      color: whitesmoke;font-weight: 700;
+      
+      
+    }
+
+    .logo > .icon {
+      width: 50px;
+    }
 
   .box2 .dot1,
   .box2 .dot2,
@@ -19,3 +48,7 @@ a {
     background-color: rgb(230, 23, 23);
 
   }
+
+
+
+  
